@@ -12,6 +12,16 @@ class Memo extends Component{
             data = this.props.data.map((value)=>(
                 <Item key={value.message} value={value} index={n++} />
             ))
+            break;
+            case 'delete':
+            data = this.props.data.map((value)=>(
+                <Item key={value.message} value={value} index={n++} />
+            ))
+            break;
+            case 'find':
+            data =this.props.fdata.map((value)=>(
+                <Item key={value.message} value={value} index={n++} />
+            ))
             break;                    
             default:
             data = this.props.data.map((value)=>(

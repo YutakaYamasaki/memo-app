@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class Item extends Component {
     render(){
         let d =this.props.value.created;
-        let f = d.getHours();
+        let f = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds()
         return (
             <tr>
                 <th>No.{this.props.index}</th>
